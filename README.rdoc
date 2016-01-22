@@ -1,4 +1,0 @@
-= Unidom Region China
-
-Unidom (UNIfied Domain Object Model) is a series of domain model engines. The China Region domain model engine includes Region and its relative models.
-Unidom (统一领域对象模型)是一系列的领域模型引擎。中国行政区划领域模型引擎包括中国大陆的行政区划及其相关的模型。
