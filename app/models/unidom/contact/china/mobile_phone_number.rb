@@ -1,3 +1,5 @@
+# China Mobile Phone Number 是中国移动电话号码。
+
 class Unidom::Contact::China::MobilePhoneNumber < ActiveRecord::Base
 
   self.table_name = 'unidom_china_mobile_phone_numbers'
