@@ -16,7 +16,7 @@ class Unidom::Contact::China::MobilePhoneNumber < ActiveRecord::Base
   scope :area_code_is,                     ->(area_code)                     { where area_code:                     area_code                     }
   scope :serial_number_is,                 ->(serial_number)                 { where serial_number:                 phone_number                  }
 
-  include ::Unidom::Common::ModelExtension
+  include Unidom::Common::Concerns::ModelExtension
 
   before_validation do
     self.network_identification_number = self.phone_number[0..2]
