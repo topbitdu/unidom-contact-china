@@ -18,5 +18,8 @@ rake db:migrate
 
 ## Call the Model
 ```ruby
-Unidom::Contact::China::MobilePhoneNumber.valid_at.alive.first
+phone_number = Unidom::Contact::China::MobilePhoneNumber.new phone_number: '13912345678'
+phone_number.save!
+
+Unidom::Contact::China::MobilePhoneNumber.valid_at.alive.first # Get all active China mobile phone numbers
 ```
