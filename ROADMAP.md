@@ -9,3 +9,6 @@
 ## v0.3
 1. Improved the Mobile Phone Number model to extract the regular expression for format validation
 2. Improved the Ruby Gem Specification to depend on unidom-common v0.5
+
+## v0.4
+1. Improved the Ruby Gem Specification to depend on unidom-common v0.7

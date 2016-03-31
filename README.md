@@ -19,6 +19,7 @@ gem 'unidom-contact-china'
 ```shell
 rake db:migrate
 ```
+The migration versions start with 2001039156.
 
 ## Call the Model
 ```ruby
