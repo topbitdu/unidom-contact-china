@@ -13,7 +13,7 @@ class Unidom::Contact::China::MobilePhoneNumber < ActiveRecord::Base
   validates :serial_number,                 presence: true, length: { is: self.columns_hash['serial_number'].limit                 }, numericality: { integer_only: true }
   validates :area_code,                     numericality: { integer_only: true }
 
-  has_many :contact_subscription, class_name: 'Unidom::Contact::ContactSubscription', as: :contact  
+  has_many :contact_subscriptions, class_name: 'Unidom::Contact::ContactSubscription', as: :contact  
 
   scope :phone_number_is,                  ->(phone_number)                  { where phone_number:                  phone_number                  }
   scope :network_identification_number_is, ->(network_identification_number) { where network_identification_number: network_identification_number }

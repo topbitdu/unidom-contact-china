@@ -11,4 +11,12 @@
 2. Improved the Ruby Gem Specification to depend on unidom-common v0.5
 
 ## v0.4
-1. Improved the Ruby Gem Specification to depend on unidom-common v0.9
+1. Improve the Mobile Phone Number model for the has_many :contact_subscriptions macro
+2. Improve the Ruby Gem Specification to depend on unidom-common v0.9
+
+## v1.0
+1. Improve the Mobile Phone Number model to include the As Contact concern
+2. As Mobile Phone Number Subscriber concern
+
+## v1.1
+1. Improve the As Mobile Phone Number Subscriber concern to add the #subscribe_china_mobile_phone_number! method
