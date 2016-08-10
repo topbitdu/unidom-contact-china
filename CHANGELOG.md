@@ -13,3 +13,6 @@
 ## v0.4
 1. Improved the Mobile Phone Number model for the has_many :contact_subscriptions macro
 2. Improved the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v0.9
+
+## v0.4.1
+1. Improved the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v1.0

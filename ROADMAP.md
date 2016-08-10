@@ -8,15 +8,18 @@
 
 ## v0.3
 1. Improved the Mobile Phone Number model to extract the regular expression for format validation
-2. Improved the Ruby Gem Specification to depend on unidom-common v0.5
+2. Improved the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v0.5
 
 ## v0.4
 1. Improve the Mobile Phone Number model for the has_many :contact_subscriptions macro
-2. Improve the Ruby Gem Specification to depend on unidom-common v0.9
+2. Improve the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v0.9
+
+## v0.4.1
+1. Improve the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v1.0
 
 ## v1.0
-1. Improve the Mobile Phone Number model to include the As Contact concern
-2. As Mobile Phone Number Subscriber concern
+1. Improve the Mobile Phone Number model to include the [As Contact](https://github.com/topbitdu/unidom-contact) concern
+2. As Mobile Phone Number Subscriber concern # Blocked by Unidom::Contact!!!
 
 ## v1.1
 1. Improve the As Mobile Phone Number Subscriber concern to add the #subscribe_china_mobile_phone_number! method
