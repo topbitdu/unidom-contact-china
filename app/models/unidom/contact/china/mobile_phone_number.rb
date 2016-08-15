@@ -7,13 +7,12 @@ class Unidom::Contact::China::MobilePhoneNumber < ActiveRecord::Base
   self.table_name = 'unidom_china_mobile_phone_numbers'
 
   include Unidom::Common::Concerns::ModelExtension
+  include Unidom::Contact::Concerns::AsContact
 
   validates :phone_number,                  presence: true, length: { is: self.columns_hash['phone_number'].limit                  }, numericality: { integer_only: true }, format: FORMAT_VALIDATION_REGEX
   validates :network_identification_number, presence: true, length: { is: self.columns_hash['network_identification_number'].limit }, numericality: { integer_only: true }
   validates :serial_number,                 presence: true, length: { is: self.columns_hash['serial_number'].limit                 }, numericality: { integer_only: true }
   validates :area_code,                     numericality: { integer_only: true }
-
-  has_many :contact_subscriptions, class_name: 'Unidom::Contact::ContactSubscription', as: :contact  
 
   scope :phone_number_is,                  ->(phone_number)                  { where phone_number:                  phone_number                  }
   scope :network_identification_number_is, ->(network_identification_number) { where network_identification_number: network_identification_number }

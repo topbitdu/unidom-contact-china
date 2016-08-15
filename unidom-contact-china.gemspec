@@ -20,6 +20,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = [ 'lib' ]
 
   spec.add_dependency 'unidom-common',  '>= 1.0'
-  # spec.add_dependency 'unidom-contact', '>= 1.1'
+  spec.add_dependency 'unidom-contact', '>= 1.1'
 
 end

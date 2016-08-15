@@ -28,3 +28,13 @@ phone_number.save!
 
 Unidom::Contact::China::MobilePhoneNumber.valid_at.alive.first # Get all active China mobile phone numbers
 ```
+
+## Include the Concerns
+```ruby
+include Unidom::Contact::Concerns::AsContact
+include Unidom::Contact::Concerns::AsSubscriber
+```
+
+### As Mobile Phone Number Subscriber concern
+The As Mobile Phone Number Subscriber concern do the following tasks for the includer automatically:  
+1. Define the has_many :china_mobile_phone_numbers macro as: ``has_many :china_mobile_phone_numbers, through: :contact_subscriptions, source: :contact, source_type: 'Unidom::Contact::China::MobilePhoneNumber'``

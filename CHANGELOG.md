@@ -16,3 +16,8 @@
 
 ## v0.4.1
 1. Improved the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v1.0
+
+## v1.0
+1. Improved the Ruby Gem Specification to depend on the [unidom-contact](https://github.com/topbitdu/unidom-contact) v1.1
+2. Improved the Mobile Phone Number model to include the [As Contact](https://github.com/topbitdu/unidom-contact) concern
+3. As Mobile Phone Number Subscriber concern
