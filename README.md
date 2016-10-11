@@ -47,8 +47,7 @@ Unidom::Contact::China::MobilePhoneNumber.valid_at.alive.first # Get all active 
 ## Include the Concerns
 
 ```ruby
-include Unidom::Contact::Concerns::AsContact
-include Unidom::Contact::Concerns::AsSubscriber
+include Unidom::Contact::China::Concerns::AsMobilePhoneNumberSubscriber
 ```
 
 ### As Mobile Phone Number Subscriber concern
