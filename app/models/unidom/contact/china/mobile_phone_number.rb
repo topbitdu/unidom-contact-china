@@ -1,6 +1,6 @@
 # China Mobile Phone Number 是中国移动电话号码。
 
-class Unidom::Contact::China::MobilePhoneNumber < ActiveRecord::Base
+class Unidom::Contact::China::MobilePhoneNumber < Unidom::Contact::China::ApplicationRecord
 
   FORMAT_VALIDATION_REGEX = /\A1[3-9]\d{9}\z/
 
