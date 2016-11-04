@@ -21,3 +21,6 @@
 1. Improve the Ruby Gem Specification to depend on the [unidom-contact](https://github.com/topbitdu/unidom-contact) v1.1
 2. Improve the Mobile Phone Number model to include the [As Contact](https://github.com/topbitdu/unidom-contact) concern
 3. As Mobile Phone Number Subscriber concern
+
+## v1.0.1
+1. Improve the Ruby Gem Specification to depend on [unidom-contact](https://github.com/topbitdu/unidom-contact) v1.3
