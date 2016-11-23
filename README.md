@@ -40,6 +40,7 @@ phone_number = Unidom::Contact::China::MobilePhoneNumber.new phone_number: '1391
 phone_number.save!
 
 Unidom::Contact::China::MobilePhoneNumber.valid_at.alive.first # Get all active China mobile phone numbers
+mobile_phone_number = Unidom::Contact::China::MobilePhoneNumber.phone_number_is('13912345678').first
 ```
 
 
