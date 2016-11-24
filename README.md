@@ -39,8 +39,11 @@ The migration versions start with 2001039156.
 phone_number = Unidom::Contact::China::MobilePhoneNumber.new phone_number: '13912345678'
 phone_number.save!
 
-Unidom::Contact::China::MobilePhoneNumber.valid_at.alive.first # Get all active China mobile phone numbers
-mobile_phone_number = Unidom::Contact::China::MobilePhoneNumber.phone_number_is('13912345678').first
+Unidom::Contact::China::MobilePhoneNumber.valid_at.alive.first
+# Find the first active China mobile phone number
+
+Unidom::Contact::China::MobilePhoneNumber.phone_number_is('13912345678').first
+# Find the mobile phone number per the given phone number.
 ```
 
 
