@@ -4,7 +4,7 @@
 1. Mobile Phone Number model & migration (20010391560010)
 
 ## v0.2
-1. Improved the Mobile Phone Number model to include the Model Extension concern
+1. Improve the Mobile Phone Number model to include the Model Extension concern
 
 ## v0.3
 1. Improved the Mobile Phone Number model to extract the regular expression for format validation
