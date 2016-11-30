@@ -8,7 +8,7 @@
 
 ## v0.3
 1. Improve the Mobile Phone Number model to extract the regular expression for format validation
-2. Improved the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v0.5
+2. Improve the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v0.5
 
 ## v0.4
 1. Improve the Mobile Phone Number model for the ``has_many :contact_subscriptions`` macro
