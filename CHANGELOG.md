@@ -27,4 +27,4 @@
 2. Improved the Ruby Gem Specification to never depend on [unidom-common](https://github.com/topbitdu/unidom-common)
 
 ## v1.0.2
-1. Improve the Ruby Gem Specification to depend on [unidom-contact](https://github.com/topbitdu/unidom-contact) v1.3.3
+1. Improved the Ruby Gem Specification to depend on [unidom-contact](https://github.com/topbitdu/unidom-contact) v1.3.3
