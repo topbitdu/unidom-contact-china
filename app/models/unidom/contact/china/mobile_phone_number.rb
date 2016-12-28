@@ -1,3 +1,4 @@
+##
 # China Mobile Phone Number 是中国移动电话号码。
 
 class Unidom::Contact::China::MobilePhoneNumber < Unidom::Contact::China::ApplicationRecord
