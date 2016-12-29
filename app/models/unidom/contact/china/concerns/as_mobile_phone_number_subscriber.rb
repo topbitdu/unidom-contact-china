@@ -1,3 +1,6 @@
+##
+# As Mobile Phone Number Subscriber 是移动电话号码用户的领域关注点。
+
 module Unidom::Contact::China::Concerns::AsMobilePhoneNumberSubscriber
 
   extend ActiveSupport::Concern
