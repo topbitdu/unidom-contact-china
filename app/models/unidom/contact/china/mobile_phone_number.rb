@@ -26,4 +26,4 @@ class Unidom::Contact::China::MobilePhoneNumber < Unidom::Contact::China::Applic
     self.serial_number                 = self.phone_number[7..10]
   end
 
-end
+end unless Unidom::Common::Neglection.namespace_neglected? 'Unidom::Contact::China::MobilePhoneNumber'
