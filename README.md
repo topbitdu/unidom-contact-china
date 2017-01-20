@@ -60,3 +60,19 @@ include Unidom::Contact::China::Concerns::AsMobilePhoneNumberSubscriber
 
 The As Mobile Phone Number Subscriber concern do the following tasks for the includer automatically:
 1. Define the has_many :china_mobile_phone_numbers macro as: ``has_many :china_mobile_phone_numbers, through: :contact_subscriptions, source: :contact, source_type: 'Unidom::Contact::China::MobilePhoneNumber'``
+
+
+
+## Disable the Model & Migration
+
+If you only need the app components other than models, the migrations should be neglected, and the models should not be loaded.
+```ruby
+# config/initializers/unidom.rb
+Unidom::Common.configure do |options|
+
+  options[:neglected_namespaces] = %w{
+    Unidom::Contact::China
+  }
+
+end
+```
