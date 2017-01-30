@@ -30,7 +30,7 @@
 1. Improved the Ruby Gem Specification to depend on [unidom-contact](https://github.com/topbitdu/unidom-contact) v1.3.3
 
 ## v1.0.3
-1. Improve the Ruby Gem Specification to depend on [unidom-contact](https://github.com/topbitdu/unidom-contact) v1.3.4
+1. Improved the Ruby Gem Specification to depend on [unidom-contact](https://github.com/topbitdu/unidom-contact) v1.3.4
 2. Improve the Engine class to include the Engine Extension concern
 
 ## v1.0.4
