@@ -34,7 +34,7 @@
 2. Improved the Engine class to include the Engine Extension concern
 
 ## v1.0.4
-1. Improve the Ruby Gem Specification to depend on [unidom-contact](https://github.com/topbitdu/unidom-contact) v1.3.5
+1. Improved the Ruby Gem Specification to depend on [unidom-contact](https://github.com/topbitdu/unidom-contact) v1.3.5
 2. Improve the models to support the namespace neglecting
 
 ## v1.1
