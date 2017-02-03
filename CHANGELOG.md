@@ -35,7 +35,7 @@
 
 ## v1.0.4
 1. Improved the Ruby Gem Specification to depend on [unidom-contact](https://github.com/topbitdu/unidom-contact) v1.3.5
-2. Improve the models to support the namespace neglecting
+2. Improved the models to support the namespace neglecting
 
 ## v1.1
 1. Models RSpec examples manifest
