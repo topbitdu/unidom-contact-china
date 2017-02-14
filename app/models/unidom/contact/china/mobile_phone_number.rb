@@ -21,9 +21,10 @@ class Unidom::Contact::China::MobilePhoneNumber < Unidom::Contact::China::Applic
   scope :serial_number_is,                 ->(serial_number)                 { where serial_number:                 phone_number                  }
 
   before_validation do
-    self.network_identification_number = self.phone_number[0..2]
-    self.area_code                     = self.phone_number[3..6]
-    self.serial_number                 = self.phone_number[7..10]
+    self.phone_number                  = phone_number.to_s
+    self.network_identification_number = phone_number[0..2]
+    self.area_code                     = phone_number[3..6]
+    self.serial_number                 = phone_number[7..10]
   end
 
 end unless Unidom::Common::Neglection.namespace_neglected? 'Unidom::Contact::China::MobilePhoneNumber'
