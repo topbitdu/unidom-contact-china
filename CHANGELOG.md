@@ -43,5 +43,5 @@
 3. Validators RSpec examples manifest
 
 ## v1.1.1
-1. Improve the Mobile Phone Number spec for the validations on the #phone_number attribute
+1. Improve the Mobile Phone Number spec for the validations on the #``phone_number`` attribute
 2. Improve the Mobile Phone Number model for the before_validation callback
