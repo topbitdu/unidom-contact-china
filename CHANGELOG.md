@@ -44,4 +44,4 @@
 
 ## v1.1.1
 1. Improve the Mobile Phone Number spec for the validations on the #``phone_number`` attribute
-2. Improve the Mobile Phone Number model for the before_validation callback
+2. Improve the Mobile Phone Number model for the ``before_validation`` callback
