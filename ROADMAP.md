@@ -45,3 +45,7 @@
 ## v1.1.1
 1. Improve the Mobile Phone Number spec for the validations on the #``phone_number`` attribute
 2. Improve the Mobile Phone Number model for the ``before_validation`` callback
+
+## v1.1.2
+1. Improve the Mobile Phone Number model for the serial_number_is scope
+2. Improve the Mobile Phone Number spec for the phone_number_is scope, the network_identification_number_is scope, the area_code_is scope, & the serial_number_is scope
