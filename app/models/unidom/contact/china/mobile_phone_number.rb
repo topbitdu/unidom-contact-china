@@ -18,7 +18,7 @@ class Unidom::Contact::China::MobilePhoneNumber < Unidom::Contact::China::Applic
   scope :phone_number_is,                  ->(phone_number)                  { where phone_number:                  phone_number                  }
   scope :network_identification_number_is, ->(network_identification_number) { where network_identification_number: network_identification_number }
   scope :area_code_is,                     ->(area_code)                     { where area_code:                     area_code                     }
-  scope :serial_number_is,                 ->(serial_number)                 { where serial_number:                 phone_number                  }
+  scope :serial_number_is,                 ->(serial_number)                 { where serial_number:                 serial_number                 }
 
   before_validation do
     self.phone_number                  = phone_number.to_s
