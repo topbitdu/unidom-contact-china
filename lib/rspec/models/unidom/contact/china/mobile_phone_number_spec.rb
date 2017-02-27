@@ -43,6 +43,30 @@ describe Unidom::Contact::China::MobilePhoneNumber, type: :model do
       { phone_number: '19912345678'  } => 0,
       { phone_number: 'A'*11         } => 2
 
+    it_behaves_like 'scope', :phone_number_is, [
+      { attributes_collection: [ model_attributes                                    ], count_diff: 0, args: [ '13912345679' ] },
+      { attributes_collection: [ model_attributes                                    ], count_diff: 1, args: [ '13912345678' ] },
+      { attributes_collection: [ model_attributes.merge(phone_number: '13812305679') ], count_diff: 1, args: [ '13812305679' ] },
+      { attributes_collection: [ model_attributes.merge(phone_number: '13812305679') ], count_diff: 0, args: [ '13912345678' ] } ]
+
+    it_behaves_like 'scope', :network_identification_number_is, [
+      { attributes_collection: [ model_attributes                                    ], count_diff: 0, args: [ '138' ] },
+      { attributes_collection: [ model_attributes                                    ], count_diff: 1, args: [ '139' ] },
+      { attributes_collection: [ model_attributes.merge(phone_number: '13812305679') ], count_diff: 1, args: [ '138' ] },
+      { attributes_collection: [ model_attributes.merge(phone_number: '13812305679') ], count_diff: 0, args: [ '139' ] } ]
+
+    it_behaves_like 'scope', :area_code_is, [
+      { attributes_collection: [ model_attributes                                    ], count_diff: 0, args: [ '1230' ] },
+      { attributes_collection: [ model_attributes                                    ], count_diff: 1, args: [ '1234' ] },
+      { attributes_collection: [ model_attributes.merge(phone_number: '13812305679') ], count_diff: 1, args: [ '1230' ] },
+      { attributes_collection: [ model_attributes.merge(phone_number: '13812305679') ], count_diff: 0, args: [ '1234' ] } ]
+
+    it_behaves_like 'scope', :serial_number_is, [
+      { attributes_collection: [ model_attributes                                    ], count_diff: 0, args: [ '5679' ] },
+      { attributes_collection: [ model_attributes                                    ], count_diff: 1, args: [ '5678' ] },
+      { attributes_collection: [ model_attributes.merge(phone_number: '13812305679') ], count_diff: 1, args: [ '5679' ] },
+      { attributes_collection: [ model_attributes.merge(phone_number: '13812305679') ], count_diff: 0, args: [ '5678' ] } ]
+
   end
 
 end
