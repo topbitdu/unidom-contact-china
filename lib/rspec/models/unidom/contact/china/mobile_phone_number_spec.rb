@@ -6,6 +6,42 @@ describe Unidom::Contact::China::MobilePhoneNumber, type: :model do
   after :each do
   end
 
+  context '.before_validation' do
+
+    model_attributes_list = {
+      { phone_number: '139123456789' } => { network_identification_number: '139', area_code: '1234', serial_number: '5678' },
+      { phone_number: '13912345678'  } => { network_identification_number: '139', area_code: '1234', serial_number: '5678' },
+      { phone_number: '13812395670'  } => { network_identification_number: '138', area_code: '1239', serial_number: '5670' },
+      { phone_number: '1391234567'   } => { network_identification_number: '139', area_code: '1234', serial_number:  '567' },
+      { phone_number: '139123456'    } => { network_identification_number: '139', area_code: '1234', serial_number:   '56' },
+      { phone_number: '13912345'     } => { network_identification_number: '139', area_code: '1234', serial_number:    '5' },
+      { phone_number: '1391234'      } => { network_identification_number: '139', area_code: '1234', serial_number:     '' },
+      { phone_number: '139123'       } => { network_identification_number: '139', area_code:  '123', serial_number:    nil },
+      { phone_number: '13912'        } => { network_identification_number: '139', area_code:   '12', serial_number:    nil },
+      { phone_number: '1391'         } => { network_identification_number: '139', area_code:    '1', serial_number:    nil },
+      { phone_number: '139'          } => { network_identification_number: '139', area_code:     '', serial_number:    nil },
+      { phone_number: '13'           } => { network_identification_number:  '13', area_code:    nil, serial_number:    nil },
+      { phone_number: '1'            } => { network_identification_number:   '1', area_code:    nil, serial_number:    nil },
+      { phone_number: ''             } => { network_identification_number:    '', area_code:    nil, serial_number:    nil },
+      { phone_number: nil            } => { network_identification_number:    '', area_code:    nil, serial_number:    nil }
+    }
+
+    model_attributes_list.each do |model_attributes, attributes|
+      model = described_class.new model_attributes
+      model.valid?
+      it "#{model_attributes.inspect} should have network_identification_number #{attributes[:network_identification_number].inspect}" do
+        expect(model.network_identification_number).to eq(attributes[:network_identification_number])
+      end
+      it "#{model_attributes.inspect} should have area_code #{attributes[:area_code].inspect}" do
+        expect(model.area_code).to eq(attributes[:area_code])
+      end
+      it "#{model_attributes.inspect} should have serial_number #{attributes[:serial_number].inspect}" do
+        expect(model.serial_number).to eq(attributes[:serial_number])
+      end
+    end
+
+  end
+
   context do
 
     model_attributes = {
