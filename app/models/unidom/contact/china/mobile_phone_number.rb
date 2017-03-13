@@ -10,10 +10,10 @@ class Unidom::Contact::China::MobilePhoneNumber < Unidom::Contact::China::Applic
   include Unidom::Common::Concerns::ModelExtension
   include Unidom::Contact::Concerns::AsContact
 
-  validates :phone_number,                  presence: true, length: { is: self.columns_hash['phone_number'].limit                  }, numericality: { integer_only: true }, format: FORMAT_VALIDATION_REGEX
-  validates :network_identification_number, presence: true, length: { is: self.columns_hash['network_identification_number'].limit }, numericality: { integer_only: true }
-  validates :serial_number,                 presence: true, length: { is: self.columns_hash['serial_number'].limit                 }, numericality: { integer_only: true }
-  validates :area_code,                     numericality: { integer_only: true }
+  validates :phone_number,                  presence: true, length: { is: self.columns_hash['phone_number'].limit                  }, numericality: { only_integer: true }, format: FORMAT_VALIDATION_REGEX
+  validates :network_identification_number, presence: true, length: { is: self.columns_hash['network_identification_number'].limit }, numericality: { only_integer: true }
+  validates :serial_number,                 presence: true, length: { is: self.columns_hash['serial_number'].limit                 }, numericality: { only_integer: true }
+  validates :area_code,                     numericality: { only_integer: true }
 
   scope :phone_number_is,                  ->(phone_number)                  { where phone_number:                  phone_number                  }
   scope :network_identification_number_is, ->(network_identification_number) { where network_identification_number: network_identification_number }
