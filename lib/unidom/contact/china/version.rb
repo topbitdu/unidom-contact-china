@@ -1,7 +1,7 @@
 module Unidom
   module Contact
     module China
-      VERSION = '1.1.3'.freeze
+      VERSION = '1.1.4'.freeze
     end
   end
 end
