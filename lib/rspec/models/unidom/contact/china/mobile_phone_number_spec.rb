@@ -49,6 +49,7 @@ describe Unidom::Contact::China::MobilePhoneNumber, type: :model do
     }
 
     it_behaves_like 'Unidom::Common::Concerns::ModelExtension', model_attributes
+    it_behaves_like 'Unidom::Contact::Concerns::AsContact',     model_attributes
 
     it_behaves_like 'validates', model_attributes, :phone_number,
       {                              } => 0,
