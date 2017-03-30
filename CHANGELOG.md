@@ -60,3 +60,7 @@
 ## v1.1.5
 1. Improve the Mobile Phone Number spec for the As Contact concern
 2. Improve the Ruby Gem Specification to depend on [unidom-contact](https://github.com/topbitdu/unidom-contact) v1.4.4
+
+## v1.1.6
+1. As Mobile Phone Number Subscriber shared examples
+2. RSpec shared examples manifest

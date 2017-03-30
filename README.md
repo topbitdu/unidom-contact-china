@@ -81,6 +81,8 @@ end
 
 ## RSpec examples
 
+### RSpec example manifest (run automatically)
+
 ```ruby
 # spec/models/unidom_spec.rb
 require 'unidom/contact/china/models_rspec'
@@ -90,4 +92,35 @@ require 'unidom/contact/china/types_rspec'
 
 # spec/validators/unidom_spec.rb
 require 'unidom/contact/china/validators_rspec'
+```
+
+### RSpec shared examples (to be integrated)
+
+```ruby
+# lib/unidom.rb
+def initialize_unidom
+
+  Unidom::Party::Person.class_eval do
+    include Unidom::Contact::China::Concerns::AsMobilePhoneNumberSubscriber
+  end
+
+end
+
+# spec/rails_helper.rb
+require 'unidom'
+initialize_unidom
+
+# spec/support/unidom_rspec_shared_examples.rb
+require 'unidom/contact/china/rspec_shared_examples'
+
+# spec/models/unidom/party/person_spec.rb
+describe Unidom::Party::Person, type: :model do
+
+  model_attribtues = {
+    name: 'Tim'
+  }
+
+  it_behaves_like 'Unidom::Contact::China::Concerns::AsMobilePhoneNumberSubscriber', model_attribtues
+
+end
 ```
