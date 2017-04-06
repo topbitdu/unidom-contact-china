@@ -51,7 +51,7 @@
 2. Improved the Mobile Phone Number spec for the phone_number_is scope, the network_identification_number_is scope, the area_code_is scope, & the serial_number_is scope
 
 ## v1.1.3
-1. Improve the Mobile Phone Number spec for the before_validation callback
+1. Improved the Mobile Phone Number spec for the before_validation callback
 
 ## v1.1.4
 1. Improve the Mobile Phone Number model for the validations on the #phone_number attribute, the #network_identification_number attribute, the #area_code attribute, the #serial_number attribute
