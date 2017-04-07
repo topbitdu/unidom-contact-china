@@ -3,8 +3,7 @@
 
 module Unidom::Contact::China::Concerns::AsMobilePhoneNumberSubscriber
 
-  extend ActiveSupport::Concern
-
+  extend  ActiveSupport::Concern
   include Unidom::Contact::Concerns::AsSubscriber
 
   included do |includer|
