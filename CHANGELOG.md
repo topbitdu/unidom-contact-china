@@ -58,7 +58,7 @@
 2. Improved the Mobile Phone Number spec for the validations on the #phone_number attribute
 
 ## v1.1.5
-1. Improve the Mobile Phone Number spec for the As Contact concern
+1. Improved the Mobile Phone Number spec for the As Contact concern
 2. Improve the Ruby Gem Specification to depend on [unidom-contact](https://github.com/topbitdu/unidom-contact) v1.4.4
 
 ## v1.1.6
