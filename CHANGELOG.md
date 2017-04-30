@@ -54,7 +54,7 @@
 1. Improved the Mobile Phone Number spec for the ``before_validation`` callback
 
 ## v1.1.4
-1. Improved the Mobile Phone Number model for the validations on the #``phone_number`` attribute, the #``network_identification_number`` attribute, the #``area_code`` attribute, the #serial_number attribute
+1. Improved the Mobile Phone Number model for the validations on the #``phone_number`` attribute, the #``network_identification_number`` attribute, the #``area_code`` attribute, the #``serial_number`` attribute
 2. Improved the Mobile Phone Number spec for the validations on the #phone_number attribute
 
 ## v1.1.5
