@@ -64,3 +64,7 @@
 ## v1.1.6
 1. As Mobile Phone Number Subscriber shared examples
 2. RSpec shared examples manifest
+
+## v1.1.7
+1. Improve the Ruby Gem Specification to depend on unidom-common v1.10
+2. Improve the China Mobile Phone Number migration for the #opened_at column, & the #closed_at column
